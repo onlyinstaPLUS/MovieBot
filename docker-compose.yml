@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  movie_bot:
+    env_file:
+      - env
+    image: akkupy/movie_bot:latest
+    container_name: movie_bot
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Kolkata
+    restart: unless-stopped
