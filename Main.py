@@ -22,7 +22,7 @@ def main():
     print("\n* https://t.me/akkupy               *")
     print("\n*************************************\n\n\n")
 
-    bot = Botz()
+    bot = Botz('6573430279:AAEkPd7bEAGCJvY2BJGK2l4wtdcJE9h9zlM')
     bot.app.add_handler(CommandHandler('start', bot.start_command))
 
     bot.app.add_handler(CommandHandler('help', bot.help_command))
