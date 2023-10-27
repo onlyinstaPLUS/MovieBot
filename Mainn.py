@@ -5,7 +5,7 @@ __status__ = "Maintenance"
 
 from telegram.ext import CommandHandler,MessageHandler,filters,CallbackQueryHandler
 
-from src import telebot
+import os, telebot
 
 def main():
 
@@ -22,7 +22,7 @@ def main():
     print("\n* https://t.me/akkupy               *")
     print("\n*************************************\n\n\n")
 
-    bot = telebot('6573430279:AAEkPd7bEAGCJvY2BJGK2l4wtdcJE9h9zlM')
+    bot = telebot.Telebot('6573430279:AAEkPd7bEAGCJvY2BJGK2l4wtdcJE9h9zlM')
     bot.app.add_handler(CommandHandler('start', bot.start_command))
 
     bot.app.add_handler(CommandHandler('help', bot.help_command))
